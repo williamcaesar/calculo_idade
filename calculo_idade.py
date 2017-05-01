@@ -1,12 +1,15 @@
 #! /usr/bin/env python3
+from time import localtime
+
 TRUE = 1
 FALSE = 0
+data = localtime()
 
 nome = input("Qual o seu nome? ")
 ano = input("Que ano você nasceu? ")
 mes = input("Que mês? ")
 dia = input("Que dia? ")
-idade = 2017-int(ano)
+idade = data[0]-int(ano)
 
 mes_nome = {1:"Janeiro",
             2:"Fevereiro",
