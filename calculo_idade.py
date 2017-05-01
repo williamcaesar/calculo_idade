@@ -31,7 +31,7 @@ def dia_mes(dia, mes):
     elif int(mes) in meses_30:
         if int(dia) < 30:
             return TRUE
-    elif int(mes) in meses_30:
+    elif int(mes) in meses_28:
         if int(dia) < 28:
             return TRUE
     else:
